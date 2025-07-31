@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.wrapper {
+  width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.header li {
+  flex: 1;
+  text-align: center;
+}
+
+.header li div {
+  background: #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header li.active div {
+  background: #ca1d2a; /* Matches Login red */
+  color: #fff;
+}
+
+.form_wrap h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.form_container {
+  padding: 20px;
+}
+
+.input_wrap {
+  margin: 15px 0;
+}
+
+.input_wrap label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ca1d2a;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+.same_line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btns_wrap {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn_next,
+.btn_back,
+.btn_done {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #ca1d2a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.btn_next:hover,
+.btn_done:hover {
+  background: #a11622;
+}
+
+.btn_back {
+  background: #666;
+}
+
+.btn_back:hover {
+  background: #555;
+}
+
+.success_wrap {
+  text-align: center;
+  padding: 20px;
+}
+
+.success_wrap p {
+  font-size: 1.2rem;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.success_wrap a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ca1d2a;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.success_wrap a:hover {
+  text-decoration: underline;
+}
+
+.link-button {
+  color: #ca1d2a;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: inherit;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  color: #a11622;
+  text-decoration: none;
+}

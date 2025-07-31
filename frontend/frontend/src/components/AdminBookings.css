@@ -1,0 +1,149 @@
+.bookings-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+.bookings-stats .stat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #8B0000;
+}
+
+.bookings-stats .stat-card h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.bookings-stats .stat-card p {
+  color: #8B0000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.filter-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 30px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.search-input, .filter-select {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-width: 200px;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  border-top: 4px solid #8B0000;
+  margin-bottom: 20px;
+}
+
+.booking-header h3 {
+  color: #8B0000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.booking-details p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.1rem;
+  color: #ffffff; /* Changed text color to white */
+}
+
+.booking-details strong {
+  color: #ffffff; /* Changed strong text color to white */
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.status-tag {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-tag.pending { background: #8B0000; color: white; }
+.status-tag.confirmed { background: #2e7d32; color: white; }
+.status-tag.cancelled { background: #333; color: white; }
+.status-tag.completed { background: #1565c0; color: white; }
+
+.booking-actions button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.confirm-btn { 
+  background: #8B0000; 
+  color: white;
+}
+.confirm-btn:hover { 
+  background: #660000; 
+}
+
+.cancel-btn { 
+  background: #333; 
+  color: white;
+}
+.cancel-btn:hover { 
+  background: #1a1a1a; 
+}
+
+.complete-btn { 
+  background: #2e7d32; 
+  color: white;
+}
+.complete-btn:hover { 
+  background: #1b5e20; 
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1000; /* Added z-index to ensure buttons are clickable */
+}
